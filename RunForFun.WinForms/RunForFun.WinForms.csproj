@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7EDAA30-AB13-4733-884C-8EE7F4379A83}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RunForFun.WinForms</RootNamespace>
+    <AssemblyName>RunForFun.WinForms</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entity Forms\frmAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entity Forms\frmAdd.Designer.cs">
+      <DependentUpon>frmAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Forms\frmComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entity Forms\frmComment.Designer.cs">
+      <DependentUpon>frmComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Forms\frmContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entity Forms\frmContact.Designer.cs">
+      <DependentUpon>frmContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Forms\frmMovies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entity Forms\frmMovies.Designer.cs">
+      <DependentUpon>frmMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Forms\frmQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entity Forms\frmQuiz.Designer.cs">
+      <DependentUpon>frmQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Forms\frmAnswersRanking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entity Forms\frmAnswersRanking.Designer.cs">
+      <DependentUpon>frmAnswersRanking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Forms\frmUserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entity Forms\frmUserList.Designer.cs">
+      <DependentUpon>frmUserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Forms\frmWatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entity Forms\frmWatch.Designer.cs">
+      <DependentUpon>frmWatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Forms\frmForgot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\frmForgot.Designer.cs">
+      <DependentUpon>frmForgot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Forms\frmMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\frmMainMenu.Designer.cs">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Forms\frmNewAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\frmNewAccount.Designer.cs">
+      <DependentUpon>frmNewAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Forms\frmWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\frmWelcome.Designer.cs">
+      <DependentUpon>frmWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Entity Forms\frmAdd.resx">
+      <DependentUpon>frmAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Forms\frmComment.resx">
+      <DependentUpon>frmComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Forms\frmContact.resx">
+      <DependentUpon>frmContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Forms\frmMovies.resx">
+      <DependentUpon>frmMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Forms\frmQuiz.resx">
+      <DependentUpon>frmQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Forms\frmAnswersRanking.resx">
+      <DependentUpon>frmAnswersRanking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Forms\frmUserList.resx">
+      <DependentUpon>frmUserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Forms\frmWatch.resx">
+      <DependentUpon>frmWatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Forms\frmForgot.resx">
+      <DependentUpon>frmForgot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Forms\frmMainMenu.resx">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Forms\frmNewAccount.resx">
+      <DependentUpon>frmNewAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Forms\frmWelcome.resx">
+      <DependentUpon>frmWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RunForFun.Business\RunForFun.Business.csproj">
+      <Project>{3F85E8C2-E5CB-4297-B62A-2C9DA277529E}</Project>
+      <Name>RunForFun.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RunForFun.Model\RunForFun.Model.csproj">
+      <Project>{43A28D83-B502-498A-916B-E97A982170F5}</Project>
+      <Name>RunForFun.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
